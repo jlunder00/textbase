@@ -9,6 +9,7 @@ import traceback
 from textbase import Message
 import threading
 import queue
+import anthropic
 
 # Return list of values of content.
 def get_contents(message: Message, data_type: str):
@@ -339,5 +340,7 @@ class DallE:
         return response['data'][0]['url']
 
 class Claude:
+
+    @classmethod
     def generate():
         pass
