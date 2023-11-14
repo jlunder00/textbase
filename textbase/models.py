@@ -337,3 +337,7 @@ class DallE:
         )
 
         return response['data'][0]['url']
+
+class Claude:
+    def generate():
+        pass
